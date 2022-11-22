@@ -47,7 +47,7 @@ public class Main {
 
         even.run();
         // run() means that new Thread, it will be executed INSIDE the Thread in which run() is called
-        // Therefore, we don't have parallel Threads here (see for yourself by calling Thread.currentThread().getName())
+        // Therefore, we don't have "real" parallel Threads here (see for yourself by calling Thread.currentThread().getName())
 
         // start() means that you want your Thread here to begin the execution. A new Thread will be created which is independent
         // of the main thread
