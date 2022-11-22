@@ -14,7 +14,7 @@ public class Main {
     // starting point of the Main Thread
     public static void main(String[] args) {
 
-        // Thread- Lifecycles
+        // Thread - Lifecycles
         //     start()         dt = going back from Runnable to Running
         //  NEW ---> RUNNABLE <--------> RUNNING
         //             | ^               |
@@ -45,7 +45,10 @@ public class Main {
         // run() represents the main method that you will override (using inheritance)
         // and by overriding run(), you define what this Thread is doing
 
-        even.start(); //start() means that you want your Thread here to begin the execution
+        even.start();
+        // run() means that this new Thread it will be executed INSIDE the Thread in which run() is called
+        // Therefore, we don't have multiple Threads here.
+        // start() means that you want your Thread here to begin the execution
 
         // because the even Thread needs a specific time to be created before it can run,
         // This println will be most likely printed first
