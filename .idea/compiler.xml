@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Thread-Fundamentals" />
+        <module name="Thread-01-Fundamentals" />
+        <module name="Thread-02-Runnable-And-Basics" />
       </profile>
     </annotationProcessing>
   </component>

@@ -15,7 +15,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Thread - Lifecycles
-        //     start()         dt = going back from Runnable to Running
+        //     start()            dt = going back from Runnable to Running
         //  NEW ---> RUNNABLE <--------> RUNNING
         //             | ^               |
         //             | |________       | z.B. Thread.sleep(1000 (+ dt))
