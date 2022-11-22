@@ -21,9 +21,9 @@ public class Main {
         //             | |________       | z.B. Thread.sleep(1000 (+ dt))
         //             v         |       v
         //            DEAD <---- BLOCKED
-        //                  it's illegal to stop Blocked Threads) !!!
+        //                  it's possible but illegal to stop Blocked Threads) !!!
         //                  interrupt(),
-        //                  stop()(deprecated):
+        //                  stop() //(deprecated)
         //
         //
         // If I only instantiate the object than the Thread will go to the NEW Stage but will not start yet
@@ -45,14 +45,16 @@ public class Main {
         // run() represents the main method that you will override (using inheritance)
         // and by overriding run(), you define what this Thread is doing
 
-        even.start();
-        // run() means that this new Thread it will be executed INSIDE the Thread in which run() is called
-        // Therefore, we don't have multiple Threads here.
-        // start() means that you want your Thread here to begin the execution
+        even.run();
+        // run() means that new Thread, it will be executed INSIDE the Thread in which run() is called
+        // Therefore, we don't have parallel Threads here (see for yourself by calling Thread.currentThread().getName())
+
+        // start() means that you want your Thread here to begin the execution. A new Thread will be created which is independent
+        // of the main thread
 
         // because the even Thread needs a specific time to be created before it can run,
         // This println will be most likely printed first
-        System.out.println("END!");
+        System.out.println("END! " + Thread.currentThread().getName());
 
 
     }
