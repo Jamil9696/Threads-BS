@@ -20,7 +20,7 @@ public class Main {
         //             | ^               |
         //             | |________       | z.B. Thread.sleep(1000 (+ dt))
         //             v         |       v
-        //            DEAD <---- BLOCKED
+        //            DEAD <----  BLOCKED
         //                  it's possible but illegal to stop Blocked Threads) !!!
         //                  interrupt(),
         //                  stop() //(deprecated)
