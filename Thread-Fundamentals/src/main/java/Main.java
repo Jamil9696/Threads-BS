@@ -2,7 +2,7 @@ public class Main {
 
     /* In case of Java,the first Thread that starts with the Main Method is also called main
        If we have only one Thread we call this program a single Thread program
-       In general, we have always more than one Threads running.
+       In general, we have always more than one Thread running.
        The Java virtual maschine has its own Threads, one for the Garbage Collector for example
 
        When we create a new Thread, the thread creation process needs some time until the new thread actually starts to run
