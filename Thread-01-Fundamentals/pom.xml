@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Thread-Fundamentals</artifactId>
+    <artifactId>Thread-01-Fundamentals</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
