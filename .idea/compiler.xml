@@ -9,6 +9,7 @@
         <module name="Thread-03-Synchronize" />
         <module name="Thread-01-Fundamentals" />
         <module name="Thread-02-Runnable-And-Basics" />
+        <module name="Thread-04-Wait-And-Notify" />
       </profile>
     </annotationProcessing>
   </component>
