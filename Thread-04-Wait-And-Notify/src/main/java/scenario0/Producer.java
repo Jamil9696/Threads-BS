@@ -18,8 +18,7 @@ public class Producer extends Thread {
 
             while (true) {
 
-                synchronized (Main.list) {
-
+                synchronized (this) {
                 if (Main.list.size() < 100) {
                     int n = r.nextInt(1000); // [0,999]
                     Main.list.add(n);
