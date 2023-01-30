@@ -46,7 +46,7 @@ public class Consumer extends Thread{
 
     @Override
     public void run() {
-        super.run();
+
         while(true){
             // Imagine the JVM actually enables a thread called Consumer1 and the list contains at the moment
             // one value list = { 100 }, and Thread C1 , C2

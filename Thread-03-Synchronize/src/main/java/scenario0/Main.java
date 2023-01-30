@@ -25,19 +25,15 @@ public class Main {
         // The consumer stops at some points due to thrown exceptions (trying to remove elements when the list is already empty)
         // and the producers continuously start running doing nothing because the list is still filled
         // so they become zombies and just consuming cpu
-       /*
-        p1.run();
-        p2.run();
-        c1.run();
-        c2.run();
-        c3.run();
-        /*/
+
 
         p1.start();
         p2.start();
         c1.start();
         c2.start();
         c3.start();
+
+
 
 
 
