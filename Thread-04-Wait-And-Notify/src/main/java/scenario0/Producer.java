@@ -23,7 +23,6 @@ public class Producer implements Runnable {
         try {
             Random r = new Random();
 
-
             while (true) {
               buffer.addItem();
             }

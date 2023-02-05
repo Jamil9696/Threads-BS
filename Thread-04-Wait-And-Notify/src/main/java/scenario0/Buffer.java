@@ -17,6 +17,10 @@ public class Buffer {
 
         if (list.isEmpty()) {
           isFull = false;
+          // will notify the next thread who is waiting
+          // notify();
+          // When we don't know which one is the next one
+          // we use notifyAll
           this.list.notifyAll();
           break;
         }
@@ -26,10 +30,6 @@ public class Buffer {
           // C2 starts at line 15 and finds out that the list is not empty
           list.remove(0);
 
-          // will notify the next thread who is waiting
-          // notify();
-          // When we don't know which one is the next one
-          // we use notifyAll
           System.out.println(Thread.currentThread().getName() + " took out the value " + n + " from the list");
       }
         // Imagine the JVM actually enables a thread called Consumer1 and the list contains at the moment
